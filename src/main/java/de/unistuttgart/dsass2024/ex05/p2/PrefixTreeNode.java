@@ -9,9 +9,9 @@ public class PrefixTreeNode implements IPrefixTreeNode {
     private HashMap<Character, IPrefixTreeNode> children;
     private Set<Character> labels;
 
-    public PrefixTreeNode(String prefix, HashMap<Character, IPrefixTreeNode> children) {
-        this.prefix = prefix;
-        this.children = children;
+    public PrefixTreeNode() {
+        this.prefix = "";
+        this.children = new HashMap<>();
     }
 
     @Override
